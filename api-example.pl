@@ -15,7 +15,7 @@ sub run_a_test
     my ($text) = @_;
     my $ua = LWP::UserAgent->new ();
     $ua->agent ("kanji-cgi-test-script");
-    my $url = 'http://mikan/kanjiui/kanji-0.016.cgi';
+    my $url = 'http://kanji.sljfaq.org/kanji-0.016.cgi';
     my $req = HTTP::Request->new (POST => $url);
     $req->content ($text);
     my $res = $ua->request ($req);
